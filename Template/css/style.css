@@ -5780,12 +5780,16 @@ Portfolio
   width: 100%;
   height: auto;
   padding: 0 0 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
   /*Styles*/
   /*Types*/
 }
 .post-item .post-item-wrap {
   background-color: #fff;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .post-item img {
   width: 100%;
@@ -11410,6 +11414,43 @@ td .form-check .form-check-input {
   width: 100%;
 }
 
+.post-item .post-item-wrap {
+  position: relative;
+}
+.post-item .post-item-wrap > img,
+.post-item .post-item-wrap > .post-image,
+.post-item .post-item-wrap > .post-slider,
+.post-item .post-item-wrap > .post-video,
+.post-item .post-item-wrap > .post-audio {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.post-video {
+  position: relative;
+  overflow: hidden;
+}
+.post-video iframe,
+.post-video video {
+  border-radius: 0;
+}
+
+.post-audio {
+  overflow: hidden;
+}
+
+.post-slider {
+  overflow: hidden;
+}
+
+.sidebar .grid-item {
+  margin-top: 30px;
+}
+.sidebar .grid-item:first-child {
+  margin-top: 0;
+}
+
 .badge {
   text-transform: none;
 }
@@ -14085,6 +14126,27 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   bottom: 10px;
   padding: 30px;
   border-radius: 0 6px 6px 6px;
+}
+
+.widget .tabs .nav-tabs {
+  border: none;
+  margin-bottom: 20px;
+}
+.widget .tabs .nav-tabs .nav-item {
+  margin-right: 15px;
+}
+.widget .tabs .nav-tabs .nav-item .nav-link {
+  padding: 0;
+  border: none;
+  color: #3c4043;
+  font-weight: 500;
+}
+.widget .tabs .nav-tabs .nav-item .nav-link.active {
+  color: #2250fc;
+  border-bottom: 2px solid #2250fc;
+}
+.widget .tabs .nav-tabs .nav-item .nav-link:hover {
+  color: #2250fc;
 }
 
 /* ----------------------------------------------------------------------
