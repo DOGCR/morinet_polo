@@ -668,262 +668,376 @@
             <div class="container">
                 <div class="row">
                     <!-- post content -->
-                    <div class="content col-lg-9">
-                        <!-- Page title -->
-                        <div class="page-title">
-                            <h1>Blog Masonry - Sidebar</h1>
-                            <div class="breadcrumb float-left">
-                                <ul>
-                                    <li><a href="#">Home</a>
+                    <div class="content col-lg-8">
+                <!-- Portfolio Filter -->
+                <nav class="grid-filter gf-outline" data-layout="#blog">
+                    <ul>
+                        <li class="active"><a href="#" data-category="*">Show All</a></li>
+                        <li><a href="#" data-category=".bc-general">General</a></li>
+                        <li><a href="#" data-category=".bc-music">Music</a></li>
+                        <li><a href="#" data-category=".bc-economics">Economics</a></li>
+                        <li><a href="#" data-category=".bc-medical">medical</a></li>
+                        <li><a href="#" data-category=".bc-sport">Sport</a></li>
+                        <li><a href="#" data-category=".bc-science">Science</a></li>
+                    </ul>
+                    <div class="grid-active-title">Show All</div>
+                </nav>
+                <!-- end: Portfolio Filter -->
+                <!-- Blog -->
+                <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
+                    <!-- Post item-->
+                    <div class="post-item border bc-general bc-music bc-economics bc-medical bc-sport bc-science">
+                        <div class="post-item-wrap">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img alt="" src="images/blog/12.jpg">
+                                </a>
+                                <span class="post-meta-category"><a href="">Lifestyle</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Standard post with a single image
+                                    </a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <!-- Post item-->
+                    <div class="post-item border bc-medical bc-sport bc-science">
+                        <div class="post-item-wrap">
+                            <div class="post-slider">
+                                <div class="carousel dots-inside arrows-visible arrows-only" data-items="1" data-loop="true" data-autoplay="true" data-lightbox="gallery">
+                                    <a href="images/blog/11.jpg" data-lightbox="gallery-image">
+                                        <img alt="" src="images/blog/16.jpg">
+                                    </a>
+                                    <a href="images/blog/16.jpg" data-lightbox="gallery-image">
+                                        <img alt="" src="images/blog/11.jpg">
+                                    </a>
+                                </div>
+                                <span class="post-meta-category"><a href="">Technology</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Simplicity, a post with slider gallery</a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <!-- Post item-->
+                    <div class="post-item border bc-general bc-music bc-economics">
+                        <div class="post-item-wrap">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img alt="" src="images/blog/17.jpg">
+                                </a>
+                                <span class="post-meta-category"><a href="">Science</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Standard post with a single image
+                                    </a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <!-- Post item HTML5 Audio-->
+                    <div class="post-item border bc-music  bc-sport bc-science">
+                        <div class="post-item-wrap">
+                            <div class="post-audio">
+                                <a href="#">
+                                    <img alt="" src="images/blog/audio-bg.jpg">
+                                </a>
+                                <span class="post-meta-category"><a href="">Audio</a></span>
+                                <audio class="video-js vjs-default-skin" controls preload="false" data-setup="{}">
+                                    <source src="audio/beautiful-optimist.mp3" type="audio/mp3" />
+                                </audio>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Self Hosted HTML5 Audio (mp3) with image cover</a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <!-- Post item Vimeo-->
+                    <div class="post-item border bc-music bc-medical bc-sport bc-science">
+                        <div class="post-item-wrap">
+                            <div class="post-video">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://player.vimeo.com/video/198559065?title=0&byline=0&portrait=0" width="560" height="376" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                                <span class="post-meta-category"><a href="">Video</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">This is a example post with Vimeo video</a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item Vimeo-->
+                    <!-- Post item-->
+                    <div class="post-item border bc-general bc-economics">
+                        <div class="post-item-wrap">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img alt="" src="images/blog/18.jpg">
+                                </a>
+                                <span class="post-meta-category"><a href="">Science</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Standard post with a single image
+                                    </a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <!-- Post item YouTube-->
+                    <div class="post-item border bc-medical bc-sport bc-science">
+                        <div class="post-item-wrap">
+                            <div class="post-video">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="376" src="https://www.youtube.com/embed/dA8Smj5tZOQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <span class="post-meta-category"><a href="">Video</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">This is a example post with YouTube</a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item YouTube-->
+                    <!-- Post item-->
+                    <div class="post-item border bc-general bc-music bc-economics bc-medical">
+                        <div class="post-item-wrap">
+                            <div class="post-slider">
+                                <div class="carousel dots-inside arrows-visible arrows-only" data-autoplay="2600" data-animate-in="fadeIn" data-animate-out="fadeOut" data-items="1" data-loop="true" data-autoplay="true" data-lightbox="gallery">
+                                    <a href="images/blog/19.jpg" data-lightbox="gallery-image">
+                                        <img alt="" src="images/blog/19.jpg">
+                                    </a>
+                                    <a href="images/blog/20.jpg" data-lightbox="gallery-image">
+                                        <img alt="" src="images/blog/20.jpg">
+                                    </a>
+                                </div>
+                                <span class="post-meta-category"><a href="">Technology</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Simplicity, a post with slider gallery</a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                    <!-- Post item-->
+                    <div class="post-item border bc-economics bc-medical">
+                        <div class="post-item-wrap">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img alt="" src="images/blog/14.jpg">
+                                </a>
+                                <span class="post-meta-category"><a href="">Lifestyle</a></span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
+                                <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+                                <h2><a href="#">Standard post with a single image
+                                    </a></h2>
+                                <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
+                                <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: Post item-->
+                </div>
+                <!-- end: Blog -->
+                <!-- Pagination -->
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+                <!-- end: Pagination -->
+            </div>
+            <!-- end: post content -->
+                    <!-- Sidebar-->
+                    <div class="sidebar sticky-sidebar col-lg-4">
+                        <div class="grid-item">
+                            <div class="widget widget-search">
+                                <h4 class="widget-title">Search form widget</h4>
+                                <form id="widget-search-form-sidebar" action="search-results-page.html" method="get">
+                                    <div class="input-group">
+                                        <input type="text" aria-required="true" name="q" class="form-control widget-search-form" placeholder="Search for pages...">
+                                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Mini gallery-->
+                        <div class="widget widget-gallery">
+                            <h4 class="widget-title">Mini Gallery</h4>
+                            <div data-lightbox="gallery">
+                                <a href="homepages/magazine/images/news/grid/5.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/5.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/6.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/6.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/7.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/7.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/8.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/8.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/9.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/9.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/10.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/10.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/11.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/11.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/12.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/12.jpg">
+                                </a>
+                                <a href="homepages/magazine/images/news/grid/13.jpg" data-lightbox="gallery-image">
+                                    <img alt="image" src="homepages/magazine/images/news/grid/13.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end: mini gallery -->
+                        <!--Tabs with Posts-->
+                        <div class="widget">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs" id="tabs-posts" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">Popular</a>
                                     </li>
-                                    <li><a href="#">Blog</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="false">Featured</a>
                                     </li>
-                                    <li class="active"><a href="#">Sidebar</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#recent" role="tab" aria-controls="recent" aria-selected="false">Recent</a>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <!-- end: Page title -->
-                        <!-- Blog -->
-                        <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
-                            <!-- Post item-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img alt="" src="images/blog/12.jpg">
-                                        </a>
-                                        <span class="post-meta-category"><a href="">Lifestyle</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Standard post with a single image
-                                            </a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                            <!-- Post item YouTube-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-video">
-                                        <iframe width="560" height="320" src="https://www.youtube.com/embed/dA8Smj5tZOQ" frameborder="0" allowfullscreen></iframe>
-                                        <span class="post-meta-category"><a href="">Video</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">This is a example post with YouTube</a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item YouTube-->
-                            <!-- Post item-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-slider">
-                                        <div class="carousel dots-inside arrows-visible arrows-only" data-items="1" data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="images/blog/11.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="images/blog/16.jpg">
-                                            </a>
-                                            <a href="images/blog/16.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="images/blog/11.jpg">
-                                            </a>
+                                <div class="tab-content" id="tabs-posts-content">
+                                    <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                                        <div class="post-thumbnail-list">
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/5.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">A true story, that never been told!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 6m ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Technology</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/6.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">Beautiful nature, and rare feathers!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 24h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/7.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">The most happiest time of the day!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 11h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <span class="post-meta-category"><a href="">Technology</a></span>
                                     </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Simplicity, a post with slider gallery</a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet. Pulvinar euismod antesagittis ante posuere ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                            <!-- Post item Vimeo-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-video">
-                                        <iframe src="https://player.vimeo.com/video/198559065?title=0&byline=0&portrait=0" width="560" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                        <span class="post-meta-category"><a href="">Video</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">This is a example post with Vimeo video</a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet. Cagittis ante posuere ac. Fusce at velit id ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item Vimeo-->
-                            <!-- Post item HTML5 Audio-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-audio">
-                                        <a href="#">
-                                            <img alt="" src="images/blog/audio-bg.jpg">
-                                        </a>
-                                        <span class="post-meta-category"><a href="">Audio</a></span>
-                                        <audio class="video-js vjs-default-skin" controls preload="false" data-setup="{}">
-                                            <source src="audio/beautiful-optimist.mp3" type="audio/mp3" />
-                                        </audio>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Self Hosted HTML5 Audio (mp3) with image cover</a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ac sagittis ante posuere ac ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                            <!-- Post item-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img alt="" src="images/blog/17.jpg">
-                                        </a>
-                                        <span class="post-meta-category"><a href="">Science</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Standard post with a single image
-                                            </a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.
-                                        </p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                            <!-- Post item-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img alt="" src="images/blog/18.jpg">
-                                        </a>
-                                        <span class="post-meta-category"><a href="">Science</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Standard post with a single image
-                                            </a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                            <!-- Post item-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-slider">
-                                        <div class="carousel dots-inside arrows-visible arrows-only" data-autoplay="2600" data-animate-in="fadeIn" data-animate-out="fadeOut" data-items="1" data-loop="true" data-autoplay="true" data-lightbox="gallery">
-                                            <a href="images/blog/19.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="images/blog/19.jpg">
-                                            </a>
-                                            <a href="images/blog/20.jpg" data-lightbox="gallery-image">
-                                                <img alt="" src="images/blog/20.jpg">
-                                            </a>
+                                    <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                                        <div class="post-thumbnail-list">
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/6.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">Beautiful nature, and rare feathers!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 24h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/7.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">The most happiest time of the day!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 11h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/8.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">New costs and rise of the economy!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 11h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <span class="post-meta-category"><a href="">Technology</a></span>
                                     </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Simplicity, a post with slider gallery</a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                            <!-- Post item-->
-                            <div class="post-item border">
-                                <div class="post-item-wrap">
-                                    <div class="post-image">
-                                        <a href="#">
-                                            <img alt="" src="images/blog/23.jpg">
-                                        </a>
-                                        <span class="post-meta-category"><a href="">Science</a></span>
-                                    </div>
-                                    <div class="post-item-description">
-                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jan 21, 2017</span>
-                                        <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
-                                        <h2><a href="#">Standard post with a single image
-                                            </a></h2>
-                                        <p>Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat. Fusce at velit id ligula pharetra laoreet.</p>
-                                        <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end: Post item-->
-                        </div>
-                        <!-- end: Blog -->
-                        <!-- Pagination -->
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-                        </ul>
-                        <!-- end: Pagination -->
-                    </div>
-                    <!-- end: post content -->
-                    <!-- Sidebar-->
-                    <div class="sidebar sticky-sidebar col-lg-3">
-                        <!--Tabs with Posts-->
-                        <div class="widget ">
-                            <h4 class="widget-title">Recent Posts</h4>
-                            <div class="post-thumbnail-list">
-                                <div class="post-thumbnail-entry">
-                                    <img alt="" src="images/blog/thumbnail/5.jpg">
-                                    <div class="post-thumbnail-content">
-                                        <a href="#">A true story, that never been told!</a>
-                                        <span class="post-date"><i class="icon-clock"></i> 6m ago</span>
-                                        <span class="post-category"><i class="fa fa-tag"></i> Technology</span>
-                                    </div>
-                                </div>
-                                <div class="post-thumbnail-entry">
-                                    <img alt="" src="images/blog/thumbnail/6.jpg">
-                                    <div class="post-thumbnail-content">
-                                        <a href="#">Beautiful nature, and rare feathers!</a>
-                                        <span class="post-date"><i class="icon-clock"></i> 24h ago</span>
-                                        <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
-                                    </div>
-                                </div>
-                                <div class="post-thumbnail-entry">
-                                    <img alt="" src="images/blog/thumbnail/7.jpg">
-                                    <div class="post-thumbnail-content">
-                                        <a href="#">Lorem ipsum dolor sit amet</a>
-                                        <span class="post-date"><i class="icon-clock"></i> 11h ago</span>
-                                        <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                    <div class="tab-pane fade" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+                                        <div class="post-thumbnail-list">
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/7.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">The most happiest time of the day!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 11h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/8.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">New costs and rise of the economy!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 11h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-thumbnail-entry">
+                                                <img alt="" src="images/blog/thumbnail/6.jpg">
+                                                <div class="post-thumbnail-content">
+                                                    <a href="#">Beautiful nature, and rare feathers!</a>
+                                                    <span class="post-date"><i class="icon-clock"></i> 24h ago</span>
+                                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--End: Tabs with Posts-->
-                        <!-- Twitter widget -->
-                        <div class="widget widget-tweeter" data-username="envato" data-limit="2">
-                            <h4 class="widget-title">Recent Tweets</h4>
-                        </div>
-                        <!-- end: Twitter widget-->
                         <!--widget tags -->
                         <div class="widget  widget-tags">
                             <h4 class="widget-title">Tags</h4>
