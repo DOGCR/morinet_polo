@@ -22,7 +22,7 @@ const compile = {
 };
 
 const directory = {
-  resources: './src',
+  resources: './src', // ← 修正済み
   dist: '../',
   livePath: '../Template',
   distPath: '../Template',
@@ -113,9 +113,9 @@ gulp.task('copy:libs', () => {
 });
 
 gulp.task('copy:html', () => {
-    return gulp.src(paths.src.html, { base: directory.resources + '/html' })
-      .pipe(gulp.dest(paths.dist.html));
-  });
+  return gulp.src(paths.src.html, { base: directory.resources + '/html' })
+    .pipe(gulp.dest(paths.dist.html));
+});
 
 gulp.task('copy:images', () => {
   return gulp.src(paths.src.images)
@@ -132,7 +132,6 @@ gulp.task('clean', () => {
     .pipe(clean({ force: true }));
 });
 
-gulp.task('build', gulp.series('scss', 'js', 'copy:html'));
 gulp.task('build', gulp.series('scss', 'js', 'copy:html', 'copy:webfonts'));
 
 gulp.task('watch', () => {
@@ -142,7 +141,7 @@ gulp.task('watch', () => {
   gulp.watch(paths.src.js + '/**/*.js', gulp.series('js'));
   gulp.watch(paths.src.images, gulp.series('copy:images')).on('change', browserSync.reload);
   gulp.watch(paths.src.webfonts, gulp.series('copy:webfonts')).on('change', browserSync.reload);
-  gulp.watch(paths.src.html, gulp.series('copy:html')).on('change', function(path) {
+  gulp.watch(paths.src.html, gulp.series('copy:html')).on('change', function (path) {
     console.log(`📄 HTML changed: ${path}`);
     browserSync.reload();
   });
