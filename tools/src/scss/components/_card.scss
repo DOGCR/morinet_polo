@@ -123,4 +123,14 @@
     overflow: hidden;
 }
 
+.sidebar {
+    .grid-item {
+        margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
 

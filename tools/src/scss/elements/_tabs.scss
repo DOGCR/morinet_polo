@@ -123,3 +123,32 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
         }
     }
 }
+
+.widget {
+    .tabs {
+        .nav-tabs {
+            border: none;
+            margin-bottom: 20px;
+            
+            .nav-item {
+                margin-right: 15px;
+                
+                .nav-link {
+                    padding: 0;
+                    border: none;
+                    color: $body-color;
+                    font-weight: 500;
+                    
+                    &.active {
+                        color: $primary;
+                        border-bottom: 2px solid $primary;
+                    }
+                    
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
