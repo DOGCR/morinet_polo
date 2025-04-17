@@ -38,7 +38,7 @@ const file = {
 const paths = {
   dist: {
     base: directory.dist,
-    html: directory.dist,
+    html: directory.distPath,
     css: directory.distPath + '/css',
     scss: directory.dist + '/scss',
     js: directory.dist + '/js',
@@ -48,7 +48,7 @@ const paths = {
   },
   src: {
     base: directory.resources,
-    html: directory.resources + '/**/*.html',
+    html: directory.resources + '/html/**/*.html',
     css: directory.resources + '/css',
     scss: directory.resources + '/scss',
     js: directory.resources + '/js',
@@ -113,28 +113,36 @@ gulp.task('copy:libs', () => {
 });
 
 gulp.task('copy:html', () => {
-  return gulp.src(paths.src.html).pipe(gulp.dest(paths.dist.html));
-});
-
+    return gulp.src(paths.src.html, { base: directory.resources + '/html' })
+      .pipe(gulp.dest(paths.dist.html));
+  });
+  
 gulp.task('copy:images', () => {
-  return gulp.src(paths.src.images).pipe(gulp.dest(paths.dist.images));
+  return gulp.src(paths.src.images)
+    .pipe(gulp.dest(paths.dist.images));
 });
 
 gulp.task('copy:webfonts', () => {
-  return gulp.src(paths.src.webfonts).pipe(gulp.dest(paths.dist.webfonts));
+  return gulp.src(paths.src.webfonts)
+    .pipe(gulp.dest(paths.dist.webfonts));
 });
 
 gulp.task('clean', () => {
-  return gulp.src(paths.dist.base, { read: false, allowEmpty: true }).pipe(clean({ force: true }));
+  return gulp.src(paths.dist.base, { read: false, allowEmpty: true })
+    .pipe(clean({ force: true }));
 });
 
-gulp.task('build', gulp.series('scss', 'js'));
+gulp.task('build', gulp.series('scss', 'js', 'copy:html'));
 
 gulp.task('watch', () => {
   browserSync.init({ server: { baseDir: directory.livePath } });
+
   gulp.watch(paths.src.scss + '/**/*.scss', gulp.series('scss', 'plugins'));
-  gulp.watch(directory.livePath + '/**/*.html').on('change', browserSync.reload);
   gulp.watch(paths.src.js + '/**/*.js', gulp.series('js'));
   gulp.watch(paths.src.images, gulp.series('copy:images')).on('change', browserSync.reload);
   gulp.watch(paths.src.webfonts, gulp.series('copy:webfonts')).on('change', browserSync.reload);
+  gulp.watch(paths.src.html, gulp.series('copy:html')).on('change', function(path) {
+    console.log(`📄 HTML changed: ${path}`);
+    browserSync.reload();
+  });
 });
