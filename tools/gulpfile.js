@@ -116,7 +116,7 @@ gulp.task('copy:html', () => {
     return gulp.src(paths.src.html, { base: directory.resources + '/html' })
       .pipe(gulp.dest(paths.dist.html));
   });
-  
+
 gulp.task('copy:images', () => {
   return gulp.src(paths.src.images)
     .pipe(gulp.dest(paths.dist.images));
@@ -133,6 +133,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('build', gulp.series('scss', 'js', 'copy:html'));
+gulp.task('build', gulp.series('scss', 'js', 'copy:html', 'copy:webfonts'));
 
 gulp.task('watch', () => {
   browserSync.init({ server: { baseDir: directory.livePath } });
