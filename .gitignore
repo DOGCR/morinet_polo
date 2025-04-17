@@ -1,0 +1,29 @@
+# Node modules（依存ライブラリ）
+node_modules/
+
+# ビルド生成物（dist/Templateなど）
+Template/plugins/
+Template/*.map
+
+# OSごとの不要ファイル
+.DS_Store
+Thumbs.db
+
+# ログファイルや一時ファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.sublime-project
+*.sublime-workspace
+
+# Cursolなどエディタの設定
+.vscode/
+.idea/
+*.code-workspace
+
+# Git関連
+*.orig
+
+# dotenv環境ファイル（必要に応じて）
+.env
+.env.*

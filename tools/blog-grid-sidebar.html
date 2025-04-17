@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Masonry - Sidebar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 2rem;
+    }
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .post-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+    .post-item img {
+      width: 100%;
+      height: auto;
+    }
+    .post-meta-category {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #2b6cb0;
+      color: #fff;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 12px;
+    }
+    .post-content {
+      padding: 1rem;
+    }
+    .post-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .post-excerpt {
+      font-size: 0.9rem;
+      color: #555;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .post-meta {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">Blog Masonry - Sidebar</h2>
+    <div class="post-grid">
+      <div class="post-item">
+        <div class="position-relative">
+          <img src="https://via.placeholder.com/525x350" alt="">
+          <span class="post-meta-category">Lifestyle</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">Standard post with a single image</div>
+          <div class="post-excerpt">Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat.</div>
+          <div class="post-meta">Jan 21, 2017 • 33 Comments</div>
+        </div>
+      </div>
+      <div class="post-item">
+        <div class="position-relative">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/dA8Smj5tZOQ" frameborder="0" allowfullscreen></iframe>
+          <span class="post-meta-category">Video</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">This is an example post with YouTube</div>
+          <div class="post-excerpt">Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat.</div>
+          <div class="post-meta">Jan 21, 2017 • 33 Comments</div>
+        </div>
+      </div>
+      <div class="post-item">
+        <div class="position-relative">
+          <img src="https://via.placeholder.com/525x350" alt="">
+          <span class="post-meta-category">Technology</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">Simplicity, a post with slider gallery</div>
+          <div class="post-excerpt">Curabitur pulvinar euismod ante, ac sagittis ante posuere ac. Vivamus luctus commodo dolor porta feugiat.</div>
+          <div class="post-meta">Jan 21, 2017 • 33 Comments</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
