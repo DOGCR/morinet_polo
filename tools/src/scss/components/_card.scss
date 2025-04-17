@@ -89,4 +89,38 @@
     }
 }
 
+.post-item {
+    .post-item-wrap {
+        position: relative;
+        
+        > img,
+        > .post-image,
+        > .post-slider,
+        > .post-video,
+        > .post-audio {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+        }
+    }
+}
+
+.post-video {
+    position: relative;
+    overflow: hidden;
+
+    iframe,
+    video {
+        border-radius: 0;
+    }
+}
+
+.post-audio {
+    overflow: hidden;
+}
+
+.post-slider {
+    overflow: hidden;
+}
+
 
