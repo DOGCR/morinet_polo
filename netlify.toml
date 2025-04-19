@@ -1,9 +1,4 @@
-[build]
-  publish = "Template"
-  command = "gulp build"
-
 [[headers]]
   for = "/*"
   [headers.values]
-    Basic-Auth = "kurata:morinetpass"
-    Status = "401" 
+    WWW-Authenticate = "Basic realm=\"Protected Area\""
