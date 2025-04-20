@@ -10,8 +10,11 @@ Copyright 2021
 
 */
 
+@use "sass:color";
+@use "sass:math";
+
 //Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,400,500,600,700,800|Nunito:300,400,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,400,500,600,700,800|Nunito:300,400,600,700,800");
 
 // Bootstrap Configuration
 @import "../../node_modules/bootstrap/scss/functions";
@@ -23,31 +26,31 @@ Copyright 2021
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 //@import "../../node_modules/bootstrap/scss/utilities";
- 
+
 // Mixins
 @import "mixins";
 
 // Bootstrap optional
 //@import "bootstrap";
 
-// Polo 
-//@import "core"; 
-//@import "layout"; 
- 
+// Polo
+//@import "core";
+//@import "layout";
+
 // utilities
-@import "utilities"; 
+@import "utilities";
 
 // widgets
-@import "widgets"; 
- 
-// Base 
+@import "widgets";
+
+// Base
 @import "base/include";
 
-// Vendor  
-@import "vendor"; 
- 
 // Vendor
-@import "components"; 
+@import "vendor";
+
+// Vendor
+@import "components";
 
 // Elements
 @import "elements/icons"; //inspiro icons
