@@ -1,4 +1,4 @@
-#[[headers]]
-#  for = "/*"
-#  [headers.values]
-#    WWW-Authenticate = "Basic realm=\"Protected Area\""
+[[headers]]
+ for = "/*"
+ [headers.values]
+  WWW-Authenticate = "Basic realm=\"Protected Area\""
